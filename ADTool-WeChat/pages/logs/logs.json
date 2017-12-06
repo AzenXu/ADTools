@@ -1,3 +1,4 @@
 {
-  "navigationBarTitleText": "查看启动日志"
+  "navigationBarTitleText": "查看启动日志",
+  "description":"用于针对性配置具体页面的颜色"
 }
