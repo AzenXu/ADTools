@@ -1,6 +1,7 @@
 //app.js
 App({
   onLaunch: function () {
+    console.log("app.js --- onLaunch 小程序初始化 初始化完成时，会触发 onLaunch（全局只触发一次）\n注意此时page还没有生成")
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -32,6 +33,19 @@ App({
         }
       }
     })
+  },
+  onShow: function() {
+    console.log("app.js --- onShow 当小程序启动，或从后台进入前台显示，会触发 onShow")
+  },
+  onHide: function() {
+    console.log("app.js --- onHide 当小程序从前台进入后台，会触发 onHide")
+  },
+  onError: function() {
+    console.log("错误监听函数 当小程序发生脚本错误，或者 api 调用失败时，会触发 onError 并带上错误信息")
+  },
+  any_custom_functino: function() {
+    //  全局的getApp()可获取到小程序的实例
+    console.log("自定义的全局函数，可通过this调用")
   },
   globalData: {
     userInfo: null

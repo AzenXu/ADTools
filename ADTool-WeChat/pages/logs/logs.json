@@ -1,4 +1,5 @@
 {
   "navigationBarTitleText": "查看启动日志",
-  "description":"用于针对性配置具体页面的颜色"
+  "description":"用于针对性配置具体页面的颜色",
+  "desc":"客户端加载一个页面的时候，会首先加载这个配置文件，配置顶部颜色与文字\n之后，客户端会加载WXML和WXSS，最后加载js"
 }

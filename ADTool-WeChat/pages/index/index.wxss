@@ -5,6 +5,14 @@
   align-items: center;
 }
 
+.subtitleInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font: 2;
+  color: #f4f;
+}
+
 .userinfo-avatar {
   width: 128rpx;
   height: 128rpx;

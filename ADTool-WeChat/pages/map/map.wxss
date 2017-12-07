@@ -1,0 +1,8 @@
+/* pages/map/map.wxss */
+.custom_map {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+  width: 375px;
+  height: 375px;
+}

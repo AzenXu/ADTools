@@ -15,6 +15,18 @@ Page({
       url: '../logs/logs'
     })
   },
+  clickMe: function() {
+    if (this.data.motto === "Hi，ADole") {
+      this.setData({ motto: "Hello World" })
+    } else {
+      this.setData({ motto: "Hi，ADole" })
+    }
+  },
+  showMap: function() {
+    wx.navigateTo({
+      url: '../map/map'
+    })
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
